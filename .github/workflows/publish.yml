@@ -30,7 +30,7 @@ jobs:
           nupkg-path: '*.nupkg'
           repo-owner: Joqds
           gh-user: Joqds
-          token: ${{secrets.PACKAGE_WRITE}}
+          token: ${{ secrets.PACKAGE_WRITE }}
 #       - name: Publish Package Github
 #         uses: alirezanet/publish-nuget@v3.0.0
 #         with:
