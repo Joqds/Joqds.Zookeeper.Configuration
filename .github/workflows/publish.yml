@@ -22,14 +22,23 @@ jobs:
           NUGET_SOURCE: https://api.nuget.org
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
           INCLUDE_SYMBOLS: true
-      - name: Publish Package Github
-        uses: alirezanet/publish-nuget@v3.0.0
+      - name: Push Nupkg to GitHub Packages
+  # You may pin to the exact commit or the version.
+  # uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@462b6006e5c90f732d030b0ace2c3e7ee9d550bc
+        uses: tanaka-takayoshi/nuget-publish-to-github-packages-action@v2.1
         with:
-          PROJECT_FILE_PATH: Joqds.Zookeeper.Configuration/Joqds.Zookeeper.Configuration.csproj
-          PACKAGE_NAME: Joqds.Zookeeper.Configuration
-          NUGET_SOURCE: https://nuget.pkg.github.com
-          NUGET_KEY: ${{secrets.PACKAGE_WRITE}}
-          INCLUDE_SYMBOLS: true
+          nupkg-path: '*.nupkg'
+          repo-owner: Joqds
+          gh-user: Joqds
+          token: ${{secrets.PACKAGE_WRITE}}
+#       - name: Publish Package Github
+#         uses: alirezanet/publish-nuget@v3.0.0
+#         with:
+#           PROJECT_FILE_PATH: Joqds.Zookeeper.Configuration/Joqds.Zookeeper.Configuration.csproj
+#           PACKAGE_NAME: Joqds.Zookeeper.Configuration
+#           NUGET_SOURCE: https://nuget.pkg.github.com
+#           NUGET_KEY: ${{secrets.PACKAGE_WRITE}}
+#           INCLUDE_SYMBOLS: true
 #      - name: publish on version change
 #        id: publish_nuget
 #        uses: brandedoutcast/publish-nuget@v2
