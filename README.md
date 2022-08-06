@@ -11,4 +11,5 @@ some of todo items:
 - [ ] manage exceptions (specially socket exceptions)
 - [ ] make it bidirectional
 - [ ] accept json format for parrents
-- [ ] support authentication to zookeeper 
+- [ ] support authentication to zookeeper
+- [ ] make sample and improve this readme!
