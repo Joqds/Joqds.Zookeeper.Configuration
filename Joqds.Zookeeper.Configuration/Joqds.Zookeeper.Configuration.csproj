@@ -15,7 +15,7 @@
     <RepositoryType>git</RepositoryType>
     <EnableNETAnalyzers>True</EnableNETAnalyzers>
     <LangVersion>10</LangVersion>
-    <Version>0.0.5-pre-release</Version>
+    <Version>0.0.6-pre-release</Version>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Copyright>Copyright (c) Joqds 2022</Copyright>
     <PackageIcon>logo.png</PackageIcon>
