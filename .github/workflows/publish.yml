@@ -21,8 +21,6 @@ jobs:
         uses: brandedoutcast/publish-nuget@v2
         with:
           PROJECT_FILE_PATH: Joqds.Zookeeper.Configuration/Joqds.Zookeeper.Configuration.csproj
-          BUILD_CONFIGURATION: Release
-          VERSION_STATIC: 0.0.2-pre-release
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
           INCLUDE_SYMBOLS: true
           
