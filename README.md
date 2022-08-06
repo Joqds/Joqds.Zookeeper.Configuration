@@ -2,6 +2,7 @@
 
 ![Nuget](https://img.shields.io/nuget/v/Joqds.Zookeeper.Configuration?label=Nuget%20Version)
 ![Nuget](https://img.shields.io/nuget/dt/Joqds.Zookeeper.Configuration?label=Nuget%20Downloads)
+[![publish to nuget](https://github.com/Joqds/Joqds.Zookeeper.Configuration/actions/workflows/publish.yml/badge.svg)](https://github.com/Joqds/Joqds.Zookeeper.Configuration/actions/workflows/publish.yml)
 
 This repository provide ability to read and watch net core application configuration from zookeeper
 
